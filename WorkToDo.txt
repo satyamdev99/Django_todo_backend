@@ -1,6 +1,1 @@
-=======Work Done Till==============
-Signup,Login,AddTodoData is working
-
-
-=====Work To Do=========================
-Make todo Update,Delete...
+All done
