@@ -52,7 +52,6 @@ class TodoListView(APIView):
         try:
             todo = Todo.objects.get(id=todo_id, user=request.user)  # Get the todo item for the current user
             serializer = TodoSerializer(todo, data=request.data)  # Deserialize the input data
-            print(serializer)
             if serializer.is_valid():  # Check if the input data is valid
                 serializer.save()  # Save the updates to the database
                 return Response(serializer.data, status=status.HTTP_200_OK)  # Respond with the updated todo data
